@@ -1,0 +1,26 @@
+if (isset($_GET['enviar']) && isset($_GET['anos'])) 
+{
+    $edad = obtener_edad_segun_fecha(isset($_GET['anos']));
+    if ($edad <> "" )
+    {
+
+        if($edad < 18)
+        {
+            echo $edad . '  Años, No es mayor de edad';
+    
+        }
+        else
+        {
+            echo $edad . ' Años, Es mayor de edad';
+        }
+    }
+}
+
+function obtener_edad_segun_fecha($fecha_nacimiento)
+{
+    $fecha_nacimiento = " ";
+    $dia_actual = date("d-m-y");
+    $edad_diff = date_diff(date_create($fecha_nacimiento), date_create($dia_actual));  
+    return $edad_diff->format('%y');
+}
+?>

@@ -1,0 +1,29 @@
+===Base de datos mi_proyectodb
+
+== Estructura de tabla para la tabla usuario
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**id**//|int|No|
+|nombre|varchar(60)|No|
+|apellido|varchar(60)|No|
+|cedula|int|No|
+== Volcado de datos para la tabla usuario
+
+|1|Andres|Pineda|100000000
+|2|Camilo|Gutierrez|200000000
+|3|Jose|Pardo|300000000
+|4|Nicolas|Perez|400000000
+|5|Laura|Espitia|500000000
+
+
+Hello
+Hello how are you?
+fine thanks and you?.
+tired I want to go out
+How about we go out to the cinema?
+guys, I am hungry. why don't we try something else
+How about we go out to the mexican restaurant?
+what time do we meet and where
+See you at nine o'clock at Don Benites restaurant
